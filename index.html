@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta con Código QR</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: hsl(212, 45%, 89%);
+        }
+        .card {
+            position: relative;
+            width: 360px;
+            height: 500px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .qr-code {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .qr-code img {
+            width: 345px;
+            height: 295px;
+            border-radius: 10px;
+        }
+        .text {
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 28px; /* Ajusta el tamaño del texto */
+            line-height: 24px; /* Ajusta el espaciado entre líneas */
+            color: hsl(218, 44%, 22%);
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* Limita el texto a 2 líneas */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .textdown {
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px; /* Ajusta el tamaño del texto */
+            line-height: 24px; /* Ajusta el espaciado entre líneas */
+            color: hsl(220, 15%, 55%);
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Limita el texto a 2 líneas */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="qr-code">
+            <img src="/images/image-qr-code.png" alt="Código QR">
+        </div>
+        <div class="text">
+            <p>Improve your front-end skills by building projects </p>
+        </div>
+        <p class="textdown">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+</body>
+</html>
